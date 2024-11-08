@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>أفلام - موقع الفيديو</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="movies.html">أفلام</a></li>
+                <li><a href="cartoons.html">كرتون</a></li>
+                <li><a href="sports.html">كرة القدم</a></li>
+                <li><a href="admin.html">لوحة التحكم</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>أفلام</h1>
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="ابحث عن فيديو...">
+            <button id="search-button">بحث</button>
+        </div>
+        <div class="subcategory-menu">
+            <button class="subcategory-btn" data-category="comedy">كوميدي</button>
+            <button class="subcategory-btn" data-category="horror">رعب</button>
+            <button class="subcategory-btn" data-category="new">جديد</button>
+            <button class="subcategory-btn" data-category="old">قديم</button>
+            <button class="subcategory-btn" data-category="foreign">أجنبي</button>
+        </div>
+        <div id="video-grid" class="video-grid">
+            <!-- Videos will be dynamically added here -->
+        </div>
+    </main>
+    <footer>
+        <p>جميع الحقوق محفوظة &copy; 2023</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

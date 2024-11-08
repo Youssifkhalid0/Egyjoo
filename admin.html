@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لوحة التحكم - موقع الفيديو</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="movies.html">أفلام</a></li>
+                <li><a href="cartoons.html">كرتون</a></li>
+                <li><a href="sports.html">كرة القدم</a></li>
+                <li><a href="admin.html">لوحة التحكم</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>لوحة التحكم</h1>
+        <div id="login-form">
+            <h2>تسجيل الدخول</h2>
+            <form id="admin-login-form">
+                <label for="phone">رقم الهاتف:</label>
+                <input type="tel" id="phone" required>
+
+                <label for="password">كلمة المرور:</label>
+                <input type="password" id="password" required>
+
+                <button type="submit">تسجيل الدخول</button>
+            </form>
+        </div>
+        <div id="admin-panel" style="display: none;">
+            <h2>إضافة فيديو جديد</h2>
+            <form id="upload-form">
+                <label for="video-title">عنوان الفيديو:</label>
+                <input type="text" id="video-title" required>
+
+                <label for="video-url">رابط الفيديو (YouTube):</label>
+                <input type="url" id="video-url" required>
+
+                <label for="video-description">وصف الفيديو:</label>
+                <textarea id="video-description" required></textarea>
+
+                <label for="video-category">الفئة:</label>
+                <select id="video-category" required>
+                    <option value="">اختر الفئة</option>
+                    <option value="movies">أفلام</option>
+                    <option value="cartoons">كرتون</option>
+                    <option value="sports">كرة القدم</option>
+                </select>
+
+                <label for="video-subcategory">التصنيف الفرعي:</label>
+                <select id="video-subcategory">
+                    <option value="">اختر التصنيف الفرعي</option>
+                </select>
+
+                <button type="submit">رفع الفيديو</button>
+            </form>
+
+            <h2>إدارة الفيديوهات</h2>
+            <div id="video-management"></div>
+        </div>
+    </main>
+    <footer>
+        <p>جميع الحقوق محفوظة &copy; 2023</p>
+    </footer>
+    <script src="admin.js"></script>
+</body>
+</html>
